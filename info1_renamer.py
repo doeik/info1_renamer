@@ -36,8 +36,10 @@ def findAndReplace(path):
                 old_file = os.path.join(dirpath, name)
                 newname = name.replace("upload_", "")
                 os.rename(old_file, os.path.join(dirpath, newname))
+            '''
             elif name.endswith(".txt"):
                 fetchSourceCode(os.path.join(dirpath, name))
+            '''
 
 
 def main():
